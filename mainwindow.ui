@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1199</width>
+    <height>673</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PokeDex</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>1151</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QGridLayout" name="gridLayout"/>
+     </item>
+     <item>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="2" column="0">
+        <widget class="QRadioButton" name="RBall">
+         <property name="text">
+          <string>Show All</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QRadioButton" name="RBice">
+         <property name="text">
+          <string>Ice</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="4">
+        <widget class="QRadioButton" name="RBsteel">
+         <property name="text">
+          <string>Steel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="6">
+        <widget class="QRadioButton" name="RBdragon">
+         <property name="text">
+          <string>Dragon</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="6">
+        <widget class="QRadioButton" name="RBfairy">
+         <property name="text">
+          <string>Fairy</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="5">
+        <widget class="QRadioButton" name="RBghost">
+         <property name="text">
+          <string>Ghost</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="7">
+        <widget class="QRadioButton" name="RBpsy">
+         <property name="text">
+          <string>Psychic</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="QRadioButton" name="RBground">
+         <property name="text">
+          <string>Ground</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="7">
+        <widget class="QRadioButton" name="RBbug">
+         <property name="text">
+          <string>Bug</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QRadioButton" name="RBwhater">
+         <property name="text">
+          <string>Water</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QRadioButton" name="RBfire">
+         <property name="text">
+          <string>Fire</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QRadioButton" name="RBeletric">
+         <property name="text">
+          <string>Electric</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="5">
+        <widget class="QRadioButton" name="RBrock">
+         <property name="text">
+          <string>Rock</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QRadioButton" name="RBpoison">
+         <property name="text">
+          <string>Poison</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="8">
+        <widget class="QRadioButton" name="RBgrass">
+         <property name="text">
+          <string>Grass</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QRadioButton" name="RBfight">
+         <property name="text">
+          <string>Fighting</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="8">
+        <widget class="QRadioButton" name="RBfly">
+         <property name="text">
+          <string>Flying</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="4">
+        <widget class="QRadioButton" name="RBdark">
+         <property name="text">
+          <string>Dark</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QRadioButton" name="RBnormal">
+         <property name="text">
+          <string>Normal</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="filterBtn">
+         <property name="text">
+          <string>Filter</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="8">
+        <widget class="QPushButton" name="compareBtn">
+         <property name="text">
+          <string>Compare</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QAbstractScrollArea::AdjustIgnored</enum>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <property name="sortingEnabled">
+        <bool>true</bool>
+       </property>
+       <property name="rowCount">
+        <number>0</number>
+       </property>
+       <column>
+        <property name="text">
+         <string>Dex num</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Name</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Type 1</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Type 2</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Hp</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Atk</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Def.</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Sp. Atk.</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Sp. Def.</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Speed</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Total</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="close">
+         <property name="text">
+          <string>Close</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>close</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1124</x>
+     <y>636</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>599</x>
+     <y>336</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
